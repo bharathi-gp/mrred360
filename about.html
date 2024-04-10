@@ -249,12 +249,10 @@
                 <script>
                   function captureFormFieldInput() {
                     var em = document.getElementById('em_id').value;
-                    if(em !== ""){
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         'event': 'User Login',
                         'email_address': em
-                    }
                     }
                 </script>
               </div>
