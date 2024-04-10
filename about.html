@@ -240,13 +240,7 @@
                 <h5>
                   Newsletter
                 </h5>
-               <form action="">
-                  <input type="email" placeholder="Email" id="em_id">
-                  <button onclick="captureFormFieldInput()">
-                    Subscribe
-                  </button>
-                </form>
-                <script>
+              <script>
                   function captureFormFieldInput() {
                     var em = document.getElementById('em_id').value;
                     window.dataLayer = window.dataLayer || [];
@@ -254,7 +248,13 @@
                         'event': 'User Login',
                         'email_address': em
                     }
-                </script>
+               </script>
+               <form>
+                  <input type="email" placeholder="Email" id="em_id">
+                  <button onclick="captureFormFieldInput()">
+                    Subscribe
+                  </button>
+                </form>
               </div>
             </div>
           </div>
