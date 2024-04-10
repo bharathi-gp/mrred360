@@ -597,9 +597,18 @@
                 <h5>
                   Newsletter
                 </h5>
-                <form action="">
-                  <input type="email" placeholder="Email">
-                  <button>
+                <script>
+                  function captureFormFieldInput() {
+                    var em = document.getElementById('em_id').value;
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'User Login',
+                        'email_address': em
+                    });
+               </script>
+               <form>
+                  <input type="email" placeholder="Email" id="em_id">
+                  <button onclick="captureFormFieldInput()">
                     Subscribe
                   </button>
                 </form>
