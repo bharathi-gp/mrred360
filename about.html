@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Mr Red</title>
+  <title>About</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
@@ -240,12 +240,23 @@
                 <h5>
                   Newsletter
                 </h5>
-                <form action="">
-                  <input type="email" placeholder="Email">
-                  <button>
+               <form action="">
+                  <input type="email" placeholder="Email" id="em_id">
+                  <button onclick="captureFormFieldInput()">
                     Subscribe
                   </button>
                 </form>
+                <script>
+                  function captureFormFieldInput() {
+                    var em = document.getElementById('em_id').value;
+                    if(em !== ""){
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'User Login',
+                        'email_address': em
+                    }
+                    }
+                </script>
               </div>
             </div>
           </div>
