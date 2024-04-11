@@ -115,7 +115,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              Design & Arts
+              Tag Manager
             </h5>
           </div>
         </div>
@@ -125,7 +125,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              Web Development
+              Web Analytics
             </h5>
           </div>
         </div>
@@ -135,7 +135,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              SEO Markting
+              Map Tools
             </h5>
           </div>
         </div>
@@ -145,7 +145,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              Video Edting
+              Advertising
             </h5>
           </div>
         </div>
@@ -155,7 +155,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              Logo Design
+              CDP
             </h5>
           </div>
         </div>
@@ -165,7 +165,7 @@
           </div>
           <div class="detail-box">
             <h5>
-              Game Design
+              Gamify
             </h5>
           </div>
         </div>
@@ -174,9 +174,7 @@
   </section>
   <!-- end category section -->
 
-  <!-- info section -->
-
-  <section class="info_section ">
+  <section class="info_section" id="footer_subscribe">
     <div class="info_container layout_padding-top">
       <div class="container">
         <div class="info_top">
@@ -250,9 +248,19 @@
                 <h5>
                   Newsletter
                 </h5>
-                <form action="">
-                  <input type="email" placeholder="Email">
-                  <button>
+                <script>
+                  function captureFormFieldInput() {
+                    var em = document.getElementById('em_id').value;
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'User Login',
+                        'email_address': em
+                    });
+                  }
+               </script>
+               <form>
+                  <input type="email" placeholder="Email" id="em_id">
+                  <button onclick="captureFormFieldInput()">
                     Subscribe
                   </button>
                 </form>
@@ -271,7 +279,7 @@
                     </div>
                     <div class="detail-box">
                       <h6>
-                        Location
+                        Coimbatore
                       </h6>
                     </div>
                   </a>
@@ -283,7 +291,7 @@
                     </div>
                     <div class="detail-box">
                       <h6>
-                        demo@gmail.com
+                        mister.red360@gmail.com
                       </h6>
                     </div>
                   </a>
@@ -295,7 +303,7 @@
                     </div>
                     <div class="detail-box">
                       <h6>
-                        Call +01 1234567890
+                        Call +91 99999 99999
                       </h6>
                     </div>
                   </a>
@@ -316,7 +324,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayDate"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="">Mr Red</a>
       </p>
     </div>
   </footer>
