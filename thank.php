@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Category</title>
+  <title>Thank you</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
