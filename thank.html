@@ -108,13 +108,13 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Thank You !!! <span id = "output_name1">Customer</span>
+                Thank You !!!
               </h2>
             </div>
             <p>
-              Dear Customer,<br><br>
+              Dear <span id = "output_name1">Customer</span>,<br><br>
 
-              <span id = "output_name2">Customer,</span> Thank you for subscribing to our newsletter! 🎉 We're thrilled to have you join our community.<br><br>
+              Thank you for subscribing to our newsletter! 🎉 We're thrilled to have you join our community.<span id = "output_name2">Customer,</span><br><br>
 
               By subscribing, you'll be the first to hear about our latest updates, special offers, and exclusive content. We promise to deliver valuable insights, tips, and resources straight to your inbox.<br><br>
 
@@ -150,7 +150,7 @@
                 return decodeURIComponent(results[2].replace(/\+/g, ' '));
               }
               var name = getParameterByName('fname');
-              var email = getParameterByName('em');
+              var email = getParameterByName('email');
               document.getElementById('output_name1').innerText = name;
               document.getElementById('output_name2').innerText = email;
               </script>
