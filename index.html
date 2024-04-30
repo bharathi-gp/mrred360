@@ -595,15 +595,19 @@
                 </h5>
                 <script>
                   function captureFormFieldInput() {
+                    var fn = document.getElementById('f_id').value;
                     var em = document.getElementById('em_id').value;
                     window.dataLayer = window.dataLayer || [];
                     window.dataLayer.push({
                         'event': 'User Login',
                         'email_address': em
                     });
-                  }
+                    fn.value = '';
+                    em.value = '';
+                   }
                </script>
-                <form action="thank.php" method="POST">
+               <form action="thank.html" method="get">
+                  <input type="name" placeholder="Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
                   <input type="email" placeholder="Email" name="email" id="em_id">
                   <button onclick="captureFormFieldInput()">
                     Subscribe
