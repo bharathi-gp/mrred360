@@ -40,6 +40,9 @@
     form {
       width: 50%; /* adjust this value to control the form's width */
     }
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 
@@ -177,21 +180,21 @@
     <div class="container">
       <div class="detail-box">
         <div class="heading_container">
-          <h2 style="margin-bottom: 20px;">
+          <h2 id="hd" style="margin-bottom: 20px;">
             Fill out Form
           </h2>
         </div>
-        <script src="//281-PON-571.mktoweb.com/js/forms2/js/forms2.min.js"></script> 
         <div class="form-container">
-          <div class="hidden heading_container" id="thankyou">
-	          <h3>Sucessfully Submitted !!! </h3> 
-          </div>
+	<div class="hidden mt-3 mb-2 cta" id="thankyou">
+	<h3>Sucessfully Submitted </h3> 
+  	</div>
         <form id="mktoForm_10270"></form> 
+	<script src="//281-PON-571.mktoweb.com/js/forms2/js/forms2.min.js"></script>
         <script>MktoForms2.loadForm("//281-PON-571.mktoweb.com", "281-PON-571", 10270 , function(form) {
-          form.onSucess(function(){
+          form.onSuccess(function(){
             form.getFormElem().hide();
              $('#thankyou').removeClass('hidden');
-            scrollTo($('#mktoForm'),100,300);
+	     $('#hd').addClass('hidden');
             return false;
           });
         });
