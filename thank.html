@@ -195,6 +195,11 @@
             form.getFormElem().hide();
              $('#thankyou').removeClass('hidden');
 	     $('#hd').addClass('hidden');
+	      window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'Form Submit',
+                        'event_category': 'Marketo Form Submission"
+                    });
             return false;
           });
         });
