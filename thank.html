@@ -191,6 +191,9 @@
         <form id="mktoForm_10270"></form> 
 	<script src="//281-PON-571.mktoweb.com/js/forms2/js/forms2.min.js"></script>
         <script>MktoForms2.loadForm("//281-PON-571.mktoweb.com", "281-PON-571", 10270 , function(form) {
+	  var fname = document.getElementByID("output_name1");
+	  var em = document.getElementByID("output_name2");
+	  form.vals({"First Name" : fname,"Email Adress" : em});
           form.onSuccess(function(){
             form.getFormElem().hide();
              $('#thankyou').removeClass('hidden');
