@@ -194,7 +194,7 @@
 		MktoForms2.loadForm("//281-PON-571.mktoweb.com", "281-PON-571", 10270 , function(form){
 		var fname1 = document.getElementById("output_name1").innerText;
 		var em1 = document.getElementById("output_name2").innerText;
-		form.setValues({"First Name" : fname1,"Email Address" : em1});
+		form.setValues({"FirstName" : fname1,"Email" : em1});
 		form.onSuccess(function(){
 			form.getFormElem().hide();
 			$('#thankyou').removeClass('hidden');
