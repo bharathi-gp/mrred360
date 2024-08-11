@@ -39,6 +39,16 @@
   </script>
   <!-- End Google Tag Manager -->
   <script>
+    var newUserId = "";
+    newUserId = crypto.randomUUID();
+    function identifyCall(){
+      var UserId = "";
+      UserId = newUserId;
+      analytics.identify( UserId ,{
+        name: document.getElementById('f_id').value;
+        email: document.getElementById('em_id').value;
+      });
+    }
     function trackClick(e){
       analytics.track("Link Clicked" ,{
         click_text: e.innerHTML,
@@ -623,7 +633,7 @@
                <form action="thank.html" method="get">
                   <input type="name" placeholder="Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
                   <input type="email" placeholder="Email" name="email" id="em_id">
-                  <button onclick="captureFormFieldInput()">
+                  <button onclick="captureFormFieldInput(); identityCall(this)">
                     Subscribe
                   </button>
                 </form>
