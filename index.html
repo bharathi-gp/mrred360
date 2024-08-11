@@ -38,6 +38,14 @@
                          j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NXLZBDQ7');
   </script>
   <!-- End Google Tag Manager -->
+  <script>
+    function trackClick(e){
+      analytics.track("Link Clicked" ,{
+        click_text: e.innerHTML,
+        click_url: e.href
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -64,13 +72,13 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html" onclick = "trackClick(e)"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="work.html">Work </a>
+                <a class="nav-link" href="work.html" onclick = "trackClick(e)">Work </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="category.html"> Category </a>
+                <a class="nav-link" href="category.html" onclick = "trackClick(e)"> Category </a>
               </li>
             </ul>
             <div class="user_option">
