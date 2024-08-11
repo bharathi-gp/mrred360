@@ -45,8 +45,8 @@
       var UserId = "";
       UserId = newUserId;
       analytics.identify( UserId ,{
-        name: document.getElementById('f_id').value;
-        email: document.getElementById('em_id').value;
+        name: document.getElementById('f_id').value,
+        email: document.getElementById('em_id').value
       });
     }
     function trackClick(e){
