@@ -48,6 +48,9 @@
         name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value
       });
+      analytics.track("User Signed" ,{
+        method: "email"
+      });
     }
     function trackClick(e){
       analytics.track("Link Clicked" ,{
