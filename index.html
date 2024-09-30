@@ -49,7 +49,20 @@
         email: document.getElementById('em_id').value
       });
       analytics.track("User Signed" ,{
-        method: "email"
+        userId : UserId,
+        properties : {
+          method : "email",
+          tealium_event : "link"
+        }
+        context : {
+         tealium_environment : "prod", 
+         tealium_session_id : "1726493464275",
+         tealium_timestamp_local : "2024-09-22T08:44:38.982",
+         locale : {
+           country : "us",
+           language : "en-us"
+          }
+        }
       });
     }
     function trackClick(e){
