@@ -54,15 +54,15 @@
           method : "email",
           tealium_event : "link"
         },
-        context : {
-         tealium_environment : "prod", 
-         tealium_session_id : "1726493464275",
-         tealium_timestamp_local : "2024-09-22T08:44:38.982",
-         locale : {
-           country : "us",
-           language : "en-us"
-          }
+        context : Object.assign({}, {
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
         }
+      })
       });
       analytics.track("CTA Click", {
   userId: "your_user_id",  // Replace with actual user ID
