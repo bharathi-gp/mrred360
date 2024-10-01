@@ -53,8 +53,8 @@
         properties : {
           method : "email",
           tealium_event : "link"
-        },
-        context : Object.assign({}, {
+        }},{
+        context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
         tealium_timestamp_local: "2024-09-22T08:44:38.982",
@@ -62,34 +62,8 @@
           country: "us",
           language: "en-us"
         }
-      })
+      }
       });
-      analytics.track("CTA Click", {
-  userId: "your_user_id",  // Replace with actual user ID
-  properties: {
-    destination_url: "your_destination_url",  // Example: "https://example.com"
-    element_class: "your_element_class",      // Example: "cta-button"
-    element_id: "your_element_id",            // Example: "cta-button-123"
-    element_location: "your_element_location",// Example: "header"
-    element_text: "your_element_text",        // Example: "Click Me"
-    event_name: "CTA Click",
-    page_query: "your_page_query",            // Example: "?utm_source=campaign"
-    page_url: "your_page_url",                // Example: "https://example.com/page"
-    referrer_query: "your_referrer_query",    // Example: "?ref=homepage"
-    referrer_url: "your_referrer_url",        // Example: "https://example.com"
-    tealium_event: "cta_click",
-    platform: "your_platform"                 // Example: "web", "mobile", etc.
-  },
-  context: {
-    tealium_environment: "prod",              // Example: "prod", "staging"
-    tealium_session_id: "your_tealium_session_id", // Example: "1726493464275"
-    tealium_timestamp_local: "2024-09-22T08:44:38.982", // Example timestamp
-    locale: {
-      country: "your_country",                // Example: "us", "gb", etc.
-      language: "your_language"               // Example: "en-us", "en-gb", etc.
-    }
-  }
-});
     }
     function trackClick(e){
       analytics.track("Link Clicked" ,{
