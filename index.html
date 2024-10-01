@@ -49,11 +49,11 @@
         email: document.getElementById('em_id').value
       });
       analytics.track("User Signed" ,{
-        userId : UserId,
         properties : {
           method : "email",
           tealium_event : "link"
         }},{
+        userId : UserId,
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
