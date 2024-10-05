@@ -44,7 +44,7 @@
       var UserId = "";
       UserId = newUserId;
       analytics.identify({
-        name: document.getElementById('f_id').value,
+        first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value
       });
       analytics.track("User Signed" ,{
@@ -52,7 +52,6 @@
           method : "email",
           tealium_event : "link"
         }},{
-        anonymousId : "01923c1ec9df00058bcf76c1bee20506f002a067007e8",
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -102,7 +101,6 @@
         page_journey_stage: "(not set)",
         page_phone_number: "(not set)"
       },{
-        anonymousId : "01923c1ec9df00058bcf76c1bee20506f002a067007e8",
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
