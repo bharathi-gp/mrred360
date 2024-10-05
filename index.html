@@ -39,11 +39,11 @@
   <!-- End Google Tag Manager -->
   <script>
     var newUserId = "";
-    newUserId = crypto.randomUUID();
+    window.newUserId = crypto.randomUUID();
     function identifyCall(){
       var UserId = "";
       UserId = newUserId;
-      analytics.identify( UserId ,{
+      analytics.identify({
         name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value
       });
@@ -52,7 +52,7 @@
           method : "email",
           tealium_event : "link"
         }},{
-        userId : UserId,
+        anonymousId : "01923c1ec9df00058bcf76c1bee20506f002a067007e8",
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -83,9 +83,9 @@
   <!-- End Google Tag Manager (noscript) -->
   <script>
     analytics.page("Home",{
-        language: "en-gb",
+        language: "en-us",
         platform: "sitecore",
-        country: "gb",
+        country: "us",
         page_name: "Home",
         sitecore_page_path: "/sitecore/content/SageDotCom/Master/home",
         page_format: "New",
@@ -101,7 +101,21 @@
         page_business_type: "(not set)",
         page_journey_stage: "(not set)",
         page_phone_number: "(not set)"
-    });
+    },{
+        anonymousId : "01923c1ec9df00058bcf76c1bee20506f002a067007e8",
+        context : {
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        },
+        traits : {
+          user_auth_status: "authenticated",
+          user_reg_status: "registered"
+        }
+      });
 </script>
   <div class="hero_area">
     <!-- header section strats -->
