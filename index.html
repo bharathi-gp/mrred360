@@ -46,13 +46,21 @@
       analytics.identify({
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value
+      },{
+        context : {
+          consent : {
+            categoryPreferences : {
+              C0001 : true
+            }
+          }
+        }
+      }
       });
       analytics.track("User Signed" ,{
         properties : {
           method : "email",
           tealium_event : "link"
         }},{
-        anonymousId : "01923c1ec9df00078067007e80987546",
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -102,7 +110,6 @@
         page_journey_stage: "(not set)",
         page_phone_number: "(not set)"
       },{
-        anonymousId : "01923c1ec9df00078067007e80987546",
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
