@@ -56,9 +56,10 @@
         }
       });
       analytics.track("Segment Consent Preference Updated",{
+        traits : {
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value
-      },{
+      }
         context : {
           consent : {
             categoryPreferences : {
