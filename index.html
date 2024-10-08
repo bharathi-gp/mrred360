@@ -46,7 +46,7 @@
       analytics.identify({
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value,
-        consent_all: ["C0001", "C0002", "C0003", "C0004"] 
+        //consent_all: ["C0001", "C0002", "C0003", "C0004"] 
       },{
         context : {
           consent : {
@@ -62,12 +62,8 @@
           email: document.getElementById('em_id').value,
           consent_all: ["C0001", "C0002", "C0003"] 
         }},{
-        context: {
-          consent: {
-            categoryPreferences: {
-              Functional: true
-            }
-          }
+        traits : {
+          consent_all: ["C0001", "C0002"]
         }
       });
       analytics.track("User Signed" ,{
@@ -132,14 +128,14 @@
           country: "us",
           language: "en-us"
         },
-        traits : {
+        /*traits : {
           consent_all: ["C0001", "C0002", "C0003"] 
-        }
+        }*/
         }
       });
-    analytics.identify({
-        consent_all: ["C0001", "C0002", "C0003"] 
-      });
+    /*analytics.identify({
+        //consent_all: ["C0001", "C0002", "C0003"] 
+      });*/
 </script>
   <div class="hero_area">
     <!-- header section strats -->
