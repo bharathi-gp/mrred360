@@ -56,16 +56,12 @@
           }
         }
       });
-      analytics.track("Segment Consent Preference Updated", {
+      analytics.track("Consent Updated", {
         properties: {
           first_name: document.getElementById('f_id').value,
-          email: document.getElementById('em_id').value
+          email: document.getElementById('em_id').value,
+          consent_all: ["C0001", "C0002", "C0003"] 
         }},{
-        traits : {
-        first_name: document.getElementById('f_id').value,
-        email: document.getElementById('em_id').value,
-        consent_all: ["C0001", "C0002", "C0003"] 
-        },
         context: {
           consent: {
             categoryPreferences: {
