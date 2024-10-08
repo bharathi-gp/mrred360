@@ -45,7 +45,8 @@
       UserId = newUserId;
       analytics.identify({
         first_name: document.getElementById('f_id').value,
-        email: document.getElementById('em_id').value
+        email: document.getElementById('em_id').value,
+        consent_all: ["C0001", "C0002", "C0003"] 
       },{
         context : {
           consent : {
@@ -62,7 +63,8 @@
         }},{
         traits : {
         first_name: document.getElementById('f_id').value,
-        email: document.getElementById('em_id').value
+        email: document.getElementById('em_id').value,
+        consent_all: ["C0001", "C0002", "C0003"] 
         },
         context: {
           consent: {
@@ -135,8 +137,7 @@
           language: "en-us"
         },
         traits : {
-          user_auth_status: "authenticated",
-          user_reg_status: "registered"
+          consent_all: ["C0001", "C0002", "C0003"] 
         }
         }
       });
