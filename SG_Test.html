@@ -28,6 +28,43 @@
   }}();
   </script>
   <!--Segment-->
+  <script>
+    function captureFormFieldInput(){
+      analytics.identify({
+        email: document.getElementById('em_id').value,
+        first_name: document.getElementById('f_id').value,
+        last_name: document.getElementById('l_id').value,
+        company: document.getElementById('c_id').value,
+        industry: document.getElementById('i_id').value,
+        employee: document.getElementById('e_id').value,
+        phone_number: document.getElementById('p_id').value
+      },{
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        }
+      });
+      analytics.track("Form Submitted" ,{
+        properties : {
+          form_type : "Login",
+          event : "form",
+          event_label : "login_form",
+          event_action : "form_submit",
+          tealium_event : "link"
+        },{
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        }
+      });
+    }
+  </script>
 </head>
 
 <body class="sub_page">
@@ -112,10 +149,12 @@
                 <div class="col-md-3  offset-lg-1" id="footer_subscribe">
                 <div class="info_form ">
                  <form method="get">
-                  <input type="name" placeholder="Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
                   <input type="email" placeholder="Email" name="email" id="em_id">
-                  <input type="name" placeholder="Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
-                  <input type="email" placeholder="Email" name="email" id="em_id">
+                  <input type="name" placeholder="First Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
+                  <input type="name" placeholder="Last Name" name="lname" id="l_id" style="margin-bottom: 10 px;">
+                  <input type="name" placeholder="Company" name="company" id="c_id">
+                  <input type="name" placeholder="Industry" name="industry" id="i_id">
+                  <input type="phone" placeholder="Phone Number" name="phone" id="p_id">
                   <button onclick="captureFormFieldInput()">
                     Subscribe
                   </button>
