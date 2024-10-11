@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Mr Red</title>
+  <title>Work</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
@@ -26,38 +26,12 @@
   <script>
   !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="NmjfBnDOY21YMT6xA8RBJQGtuQHpo2rX";;analytics.SNIPPET_VERSION="5.2.0";
   analytics.load("NmjfBnDOY21YMT6xA8RBJQGtuQHpo2rX");
-  analytics.page();
   }}();
-</script>
-  <!--Segment-->
-  <script>
-    function identifyCall(){
-      analytics.identify({
-        first_name: document.getElementById('f_id').value,
-        email: document.getElementById('em_id').value,
-      },{
-        tealium_environment: "prod",
-        tealium_session_id: "1726493464275",
-        tealium_timestamp_local: "2024-09-22T08:44:38.982",
-        locale: {
-          country: "us",
-          language: "en-us"
-        }
-      });
-      analytics.track("Form Submitted" ,{
-        properties : {
-          form_type : "Login",
-          event : "form",
-          event_label : "login_form",
-          event_action : "form_submit",
-          tealium_event : "link"
-        });
-    }
   </script>
+  <!--Segment-->
 </head>
 
-<body>
-</script>
+<body class="sub_page">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -65,7 +39,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
             <span>
-              SG Testing Page BH
+              Mr. Red
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,17 +48,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html" onclick = "trackClick(this)" return false;> About</a>
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="work.html">Work </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="work.html" onclick = "trackClick(this)" return false;>Work </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="category.html" onclick = "trackClick(this)" return false;> Category </a>
+                <a class="nav-link" href="category.html"> Category </a>
               </li>
             </ul>
             <div class="user_option">
@@ -117,37 +91,199 @@
         </nav>
       </div>
     </header>
-  <!-- end header section -->
-    
-   
-  <!-- end info section -->
- <!-- experience section -->
+    <!-- end header section -->
+  </div>
 
-  <section class="experience_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="img-box">
-            <img src="experience-img.jpg" alt="">
+
+  <!-- freelance section -->
+
+  <section class="freelance_section layout_padding">
+    <div id="accordion">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-1">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Company Can do
+                </h2>
+              </div>
+              <div class="tab_container">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="collapse show" id="collapseThree" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="img-box">
+                <img src="discount-tag.png" style="height: 100%; width: 50%; margin-left: 30%;" alt="">
+              </div>
+            </div>
+            <div class="collapse" id="collapseFour" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="img-box">
+                <img src="analytic.png" style="height: 100%; width: 50%; margin-left: 30%;" alt="">
+              </div>
+            </div>
+            <div class="collapse" id="collapseOne" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="img-box">
+                <img src="feedback.png" style="height: 100%; width: 50%; margin-left: 30%;" alt="">
+              </div>
+            </div>
+            <div class="collapse" id="collapseTwo" aria-labelledby="headingfour" data-parent="#accordion">
+              <div class="img-box">
+                <img src="bar-chart.png" style="height: 100%; width: 50%; margin-left: 30%;" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                Best Learning Here
-              </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- end freelance section -->
+
+   <!-- info section -->
+
+   <section class="info_section">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <span>
+              Mr. Red
+            </span>
+          </div>
+          <div class="social_box">
+            <a href="#">
+              <img src="fb.png" alt="">
+            </a>
+            <a href="#">
+              <img src="twitter.png" alt="">
+            </a>
+            <a href="#">
+              <img src="linkedin.png" alt="">
+            </a>
+            <a href="#">
+              <img src="instagram.png" alt="">
+            </a>
+            <a href="#">
+              <img src="youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-2">
+              <div class="info_link-box">
+                <h5>
+                  Useful Link
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="" href="about.html">About </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="work.html">Work </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="category.html">Category </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <p>
-              This website offers seamless integration with essential marketing tools like Google Tag Manager (GTM), Google Analytics 360 (GA360), Adobe Analytics, Marketo, Oracle Eloqua, Tealium, and Adobe Experience Platform (AEP). Integration with GTM facilitates efficient tracking and analysis of user interactions, while analytics platforms provide comprehensive insights into website performance. Marketing automation platforms streamline lead management and campaigns, improving conversion efforts. Additionally, integration with customer data platforms centralizes customer data, enabling personalized targeting based on behavior. By integrating with these tools, the website empowers marketers to optimize strategies, enhance user experiences, and drive measurable outcomes effectively.
-            </p>
-            <div class="btn-box">
-              <a href="work.html" class="btn-1">
-                Read More
-              </a>
-              <a href="#footer_subscribe" class="btn-2">
-                Login
-              </a>
+            <div class="col-md-3 ">
+              <h5>
+                Offices
+              </h5>
+              <p>
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 offset-lg-1">
+              <h5>
+                Information
+              </h5>
+              <p>
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+              </p>
+            </div>
+
+            <div class="col-md-3  offset-lg-1" id="footer_subscribe">
+              <div class="info_form ">
+                <h5>
+                  Newsletter
+                </h5>
+                <script>
+                  function captureFormFieldInput() {
+                    var fn = document.getElementById('f_id').value;
+                    var em = document.getElementById('em_id').value;
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        'event': 'User Login',
+                        'email_address': em
+                    });
+                    fn.value = '';
+                    em.value = '';
+                   }
+               </script>
+               <form action="thank.html" method="get">
+                  <input type="name" placeholder="Name" name="fname" id="f_id" style="margin-bottom: 10 px;">
+                  <input type="email" placeholder="Email" name="email" id="em_id">
+                  <button onclick="captureFormFieldInput()">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="location.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Coimbatore
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="mail.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        mister.red360@gmail.com
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="call.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Call +91 99999 99999
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +292,8 @@
     </div>
   </section>
 
-  <!-- end experience section -->
+  <!-- end info section -->
+
   <!-- footer section -->
   <footer class="container-fluid footer_section ">
     <div class="container">
@@ -169,9 +306,11 @@
   <!-- end  footer section -->
 
 
+
   <script src="jquery-3.4.1.min.js"></script>
   <script src="bootstrap.js"></script>
   <script src="custom.js"></script>
+
 
 
 </body>
