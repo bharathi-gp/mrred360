@@ -35,10 +35,21 @@
       analytics.identify({
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value,
+      },{
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        }
       });
       analytics.track("Form Submitted" ,{
         properties : {
-          method : "email",
+          form_type : "Login",
+          event : "form",
+          event_label : "login_form",
+          event_action : "form_submit",
           tealium_event : "link"
         });
     }
