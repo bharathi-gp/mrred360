@@ -29,32 +29,6 @@
   </script>
   <!--Segment-->
   <script>
-    function trackClick(){
-      analytics.track("Login Started",{
-            destination_url: "https//www.intacct.com/ia/acct/login.phtml",
-            element_class: "score-button button--secondary",
-            element_id: "stylebox-5b8b64edec154ac3b819403091a88f62-0",
-            element_text: "Sage Intacct Login",
-            event_action: "external link",
-            event_category: "engagement",
-            event_label: "sage intacct login",
-            event_name: "login_start",
-            tealium_event: "link"
-        },{
-        context : {
-          tealium_environment: "prod",
-          tealium_session_id: "1726493464275",
-          tealium_timestamp_local: "2024-09-22T084438.982",
-          locale : {
-            country: "us",
-            language: "en-us"
-          },
-          traits : {
-            tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
-         }
-        }
-    });
-    }
     function captureFormFieldInput(){
       analytics.identify({
         tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
@@ -105,6 +79,32 @@
             tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
          }
       });
+    }
+    function trackClick(){
+      analytics.track("Login Started",{
+            destination_url: "https//www.intacct.com/ia/acct/login.phtml",
+            element_class: "score-button button--secondary",
+            element_id: "stylebox-5b8b64edec154ac3b819403091a88f62-0",
+            element_text: "Sage Intacct Login",
+            event_action: "external link",
+            event_category: "engagement",
+            event_label: "sage intacct login",
+            event_name: "login_start",
+            tealium_event: "link"
+        },{
+        context : {
+          tealium_environment: "prod",
+          tealium_session_id: "1726493464275",
+          tealium_timestamp_local: "2024-09-22T084438.982",
+          locale : {
+            country: "us",
+            language: "en-us"
+          },
+          traits : {
+            tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
+         }
+        }
+    });
     }
   </script>
 </head>
