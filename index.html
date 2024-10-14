@@ -56,7 +56,7 @@
           }
         }
       });
-      analytics.track("Consent Updated", {
+      /*analytics.track("Consent Updated", {
         properties: {
           first_name: document.getElementById('f_id').value,
           email: document.getElementById('em_id').value,
@@ -65,7 +65,7 @@
         traits : {
           consent_all: ["C0001", "C0002"]
         }
-      });
+      });*/
       analytics.track("User Signed" ,{
         properties : {
           method : "email",
@@ -80,6 +80,8 @@
           language: "en-us"
         },
         traits : {
+          tealium_visitor_id: "172649346427wer4trr",
+          email: document.getElementById('em_id').value,
           user_auth_status: "authenticated",
           user_reg_status: "registered"
         }
