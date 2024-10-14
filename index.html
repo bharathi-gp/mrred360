@@ -72,7 +72,6 @@
           tealium_event : "link"
         }},{
         context : {
-        tealium_visitor_id: analytics.user().anonymousId(),
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
         tealium_timestamp_local: "2024-09-22T08:44:38.982",
@@ -80,6 +79,9 @@
           country: "us",
           language: "en-us"
         },
+        traits : {
+          tealium_visitor_id: analytics.user().anonymousId()
+        }
       }
       });
     }
@@ -87,7 +89,18 @@
       analytics.track("Link Clicked" ,{
         click_text: e.innerHTML,
         click_url: e.href
-      });
+      }, {
+        context : {
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        },
+        traits : {
+          tealium_visitor_id: analytics.user().anonymousId()
+        }
     }
   </script>
 </head>
@@ -126,6 +139,9 @@
           country: "us",
           language: "en-us"
         },
+        traits : {
+          tealium_visitor_id: analytics.user().anonymousId()
+        }
       }});
     /*analytics.identify({
         //consent_all: ["C0001", "C0002", "C0003"] 
