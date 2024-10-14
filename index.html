@@ -72,7 +72,7 @@
           tealium_event : "link"
         }},{
         context : {
-        tealium_visitor_id: window.newUserId,
+        tealium_visitor_id: analytics.user().anonymousId(),
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
         tealium_timestamp_local: "2024-09-22T08:44:38.982",
@@ -118,7 +118,7 @@
         page_phone_number: "(not set)"
       },{
         context : {
-        tealium_visitor_id: window.newUserId,
+        tealium_visitor_id: analytics.user().anonymousId(),
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
         tealium_timestamp_local: "2024-09-22T08:44:38.982",
