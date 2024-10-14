@@ -87,7 +87,6 @@
     }
     function trackClick(e){
       analytics.track("Login Started",{
-          properties : {
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
             element_id: "stylebox-5b8b64edec154ac3b819403091a88f62-0",
@@ -97,7 +96,6 @@
             event_label: "sage intacct login",
             event_name: "login_start",
             tealium_event: "link"
-          }
         },{
         context : {
           tealium_environment: "prod",
