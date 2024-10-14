@@ -33,11 +33,6 @@
       analytics.identify({
         tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg",
         email: document.getElementById('em_id').value
-        /*first_name: document.getElementById('f_id').value,
-        last_name: document.getElementById('l_id').value,
-        company: document.getElementById('c_id').value,
-        industry: document.getElementById('i_id').value,
-        phone_number: document.getElementById('p_id').value*/
       },{
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -48,7 +43,7 @@
         }
       });
       analytics.track("Form Submitted" ,{
-          email: document.getElementById('em_id').value,,
+          email: document.getElementById('em_id').value,
           industry: document.getElementById('i_id').value,
           number_of_employee: document.getElementById('ne_id').value,
           action: "form_submit_success",
