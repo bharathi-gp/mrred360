@@ -80,7 +80,7 @@
          }
       });
     }
-    function trackClick(){
+    function trackClickFunc(){
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
@@ -178,7 +178,7 @@
         <div class="col-md-7">
           <div class="detail-box">
             <div class="btn-box">
-              <a href="work.html" class="btn-1" onclick="trackClick()">
+              <a href="work.html" class="btn-1" onclick="trackClickFunc()" return false;>
                 Login Start
               </a>
             </div>
