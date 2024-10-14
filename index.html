@@ -71,6 +71,9 @@
           method : "email",
           tealium_event : "link"
         }},{
+        traits : {
+          tealium_visitor_id: analytics.user().anonymousId()
+        }
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -78,9 +81,6 @@
         locale: {
           country: "us",
           language: "en-us"
-        },
-        traits : {
-          tealium_visitor_id: analytics.user().anonymousId()
         }
       }
       });
@@ -90,6 +90,9 @@
         click_text: e.innerHTML,
         click_url: e.href
       }, {
+        traits : {
+          tealium_visitor_id: analytics.user().anonymousId()
+        }
         context : {
         tealium_environment: "prod",
         tealium_session_id: "1726493464275",
@@ -97,9 +100,6 @@
         locale: {
           country: "us",
           language: "en-us"
-        },
-        traits : {
-          tealium_visitor_id: analytics.user().anonymousId()
         }
         }});
     }
