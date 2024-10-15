@@ -46,14 +46,18 @@
       analytics.identify({
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value,
-        //consent_all: ["C0001", "C0002", "C0003", "C0004"] 
       },{
         context : {
-          consent : {
-            categoryPreferences : {
-              Functional : true
-            }
-          }
+          tealium_environment: "prod",
+          tealium_session_id: "1726493464275",
+          tealium_timestamp_local: "2024-09-22T084438.982",
+          locale : {
+            country: "us",
+            language: "en-us"
+          },
+          traits : {
+            tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
+         }
         }
       });
       /*analytics.track("Consent Updated", {
