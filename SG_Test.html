@@ -31,18 +31,20 @@
   <script>
     function captureFormFieldInput(){
       analytics.identify({
-        tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg",
-        email: document.getElementById('em_id').value
+        email: document.getElementById('em_id').value,
+        tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
       },{
-        tealium_environment: "prod",
-        tealium_session_id: "1726493464275",
-        tealium_timestamp_local: "2024-09-22T08:44:38.982",
-        locale: {
-          country: "us",
-          language: "en-us"
+        context : {
+          tealium_environment: "prod",
+          tealium_session_id: "1726493464275",
+          tealium_timestamp_local: "2024-09-22T084438.982",
+          locale : {
+            country: "us",
+            language: "en-us"
+          }
         }
       });
-      analytics.track("Form Submitted" ,{
+      analytics.track("Form" ,{
           email: document.getElementById('em_id').value,
           industry: document.getElementById('i_id').value,
           number_of_employee: document.getElementById('ne_id').value,
@@ -63,17 +65,19 @@
           step_name: "step_3",
           total_steps: "2"
       },{
-        tealium_environment: "prod",
-        tealium_session_id: "1726493464275",
-        tealium_timestamp_local: "2024-09-22T08:44:38.982",
-        locale: {
-          country: "us",
-          language: "en-us"
-        },
+        context : {
+          tealium_environment: "prod",
+          tealium_session_id: "1726493464275",
+          tealium_timestamp_local: "2024-09-22T084438.982",
+          locale : {
+            country: "us",
+            language: "en-us"
+          },
           traits : {
             tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
          }
-      });
+        }
+    });
     }
   </script>
 </head>
