@@ -110,6 +110,38 @@
          }
         }
     });
+      analytics.track("Form Submitted" ,{
+          email: "smoketest@acc.com",
+          industry: "education",
+          number_of_employee: "1-4 employee",
+          action: "form_submit_success",
+          customer_lead_type: "Contact",
+          eloqua_form: "NPS_18Q1_OT_GBL_DGWW_NPS_GatedContentHighScore",
+          event: "form",
+          event_type: "submit",
+          form_elements: "emailAddress,firstName,lastName,company",
+          form_name: "SX3_2410_NCA_US_SX3OPConsolidationPriceReq",
+          form_step: "3",
+          form_type: "multistep",
+          gate_campaign_id: "701Of00000AlMCFIA3",
+          gate_content_name: "CL_SX3_US_MED_QUO_BOFU_SX3OPConsPriceReq",
+          gate_score: "High Score",
+          item_name: "Sage X3",
+          modal_gate: "da00f680-fc08-4be1-ae1d-5f3fe32b9d37",
+          step_name: "step_3",
+          total_steps: "2"
+      },{
+        tealium_environment: "prod",
+        tealium_session_id: "1726493464275",
+        tealium_timestamp_local: "2024-09-22T08:44:38.982",
+        locale: {
+          country: "us",
+          language: "en-us"
+        },
+          traits : {
+            tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
+         }
+      });
       analytics.track("Link Clicked" ,{
         click_text: e.innerHTML,
         click_url: e.href
