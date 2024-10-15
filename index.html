@@ -46,6 +46,7 @@
       analytics.identify({
         first_name: document.getElementById('f_id').value,
         email: document.getElementById('em_id').value,
+        tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
       },{
         context : {
           tealium_environment: "prod",
@@ -54,10 +55,7 @@
           locale : {
             country: "us",
             language: "en-us"
-          },
-          traits : {
-            tealium_visitor_id: "0191f91a21300074692e4738c0a00506f001b067007e8fg"
-         }
+          }
         }
       });
       /*analytics.track("Consent Updated", {
