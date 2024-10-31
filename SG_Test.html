@@ -75,7 +75,8 @@
       },{
          "integrations": {
           "All": true,
-          "Google Analytics 4 Web": true
+          "Google Analytics 4 Web": true,
+          "Webhooks (Actions)" : true
         },
         context : {
           tealium_environment: "prod",
@@ -106,13 +107,13 @@
             event_category: "engagement",
             event_label: "sage intacct login",
             event_name: "login_start",
-            tealium_event: true,
+            tealium_event: "test",
             testing_1: "testing_omit",
             testing_2: "testing_omit"
         },{
         "integrations": {
           "All": true,
-          "Google Analytics 4 Web": false,
+          "Google Analytics 4 Web": false
         },
         context : {
           tealium_environment: "prod",
