@@ -95,7 +95,15 @@
   </script>
   <script src="https://cdn.c360a.salesforce.com/beacon/c360a/35e25c19-a3fb-4e6d-9281-59c2b45a2e20/scripts/c360a.min.js"></script>
   <script>
-        SalesforceInteractions.init();
+        SalesforceInteractions.init({
+	    consents: [
+	        { 
+	            purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
+	            provider: "OneTrust", 
+	            status: SalesforceInteractions.ConsentStatus.OptIn 
+	        }
+	    ]
+	});
         SalesforceInteractions.setLoggingLevel(4); 
   </script>
 </head>
