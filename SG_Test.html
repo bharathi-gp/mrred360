@@ -93,7 +93,7 @@
     });
     }
   </script>
-  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/35e25c19-a3fb-4e6d-9281-59c2b45a2e20/scripts/c360a.min.js"></script>
+  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/f8a9b212-9db5-4377-934b-794e53a1ea28/scripts/c360a.min.js"></script>
   <script>
         SalesforceInteractions.init({
 	    consents: [
@@ -113,10 +113,8 @@
     function trackClickFunc(){
       SalesforceInteractions.sendEvent({
        interaction: {
-	    name: "Test", // Event name
-	    attributes: {
-		testAttribute1: "sampleValue" // Custom attribute
-	    }
+	    name: "Test",
+	    testAttribute1: "sampleValue"
         }
       });
       analytics.track("Login Started",{
