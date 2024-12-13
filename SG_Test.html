@@ -112,9 +112,11 @@
   <script>
     function trackClickFunc(){
       SalesforceInteractions.sendEvent({
-        interaction: {
-          name: 'Test',
-	  testAttribute1: 'tested'
+       interaction: {
+	    name: "Test", // Event name
+	    attributes: {
+		testAttribute1: "sampleValue" // Custom attribute
+	    }
         }
       });
       analytics.track("Login Started",{
