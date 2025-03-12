@@ -103,9 +103,11 @@
   <script>
     function trackClickFunc(){
       SalesforceInteractions.sendEvent({
-       name:'Test',
-       attributes: {
+        interaction: {
+           name:'Test',
+           attributes: {
             testAttribute1: 'SAVE10'
+          }
         }     
       });
       analytics.track("Login Started",{
