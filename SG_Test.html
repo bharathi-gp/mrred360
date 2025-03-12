@@ -24,8 +24,16 @@
   <!-- Google tag (gtag.js) -->
   <script src="https://cdn.c360a.salesforce.com/beacon/c360a/c0673025-29b1-4583-96ce-5286646bf6c1/scripts/c360a.min.js"></script>
   <script>
-        SalesforceInteractions.init();
-        SalesforceInteractions.setLoggingLevel(4);
+      SalesforceInteractions.init({
+          consents: [
+              { 
+                  purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
+                  provider: "OneTrust", 
+                  status: SalesforceInteractions.ConsentStatus.OptIn
+              }
+          ]
+      });
+      SalesforceInteractions.setLoggingLevel(4);
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SP5W9XGLL"></script>
   <script>
