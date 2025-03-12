@@ -102,6 +102,11 @@
 <body class="sub_page">
   <script>
     function trackClickFunc(){
+      SalesforceInteractions.updateConsents({ 
+        purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
+        provider: "OneTrust", 
+        status: SalesforceInteractions.ConsentStatus.OptIn 
+      });
       SalesforceInteractions.sendEvent({
       interaction: {
         name: "Cart",
