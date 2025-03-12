@@ -102,14 +102,14 @@
 <body class="sub_page">
   <script>
     function trackClickFunc(){
-      SalesforceInteractions.sendEvent({
-        SalesforceInteractions.updateConsents({ 
+      SalesforceInteractions.updateConsents({ 
         purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
         provider: "OneTrust", 
         status: SalesforceInteractions.ConsentStatus.OptIn 
         });
-        this.optInDisabled = true;
-        this.optOutDisabled = false;
+      this.optInDisabled = true;
+      this.optOutDisabled = false;
+      SalesforceInteractions.sendEvent({
         interaction: {
           name:'Test'
         }
