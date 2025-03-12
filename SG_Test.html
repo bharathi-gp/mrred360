@@ -22,12 +22,12 @@
   <!-- responsive style -->
   <link href="responsive.css" rel="stylesheet" />
   <!-- Google tag (gtag.js) -->
+  <script async src="https://cdn.c360a.salesforce.com/beacon/c360a/6a48ddfd-3dcd-43ba-8d80-eb508e5aec5c/scripts/c360a.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SP5W9XGLL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-2SP5W9XGLL');
   </script>
   <!--Segment-->
@@ -92,19 +92,6 @@
         }
     });
     }
-  </script>
-  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/f8a9b212-9db5-4377-934b-794e53a1ea28/scripts/c360a.min.js"></script>
-  <script>
-        SalesforceInteractions.init({
-	    consents: [
-	        { 
-	            purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
-	            provider: "OneTrust", 
-	            status: SalesforceInteractions.ConsentStatus.OptIn 
-	        }
-	    ]
-	});
-        SalesforceInteractions.setLoggingLevel(4); 
   </script>
 </head>
 
