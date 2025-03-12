@@ -122,6 +122,11 @@
         }
       }
       });
+      SalesforceInteractions.sendEvent({
+      interaction: {
+        name: "Newtester"
+      }
+      });
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
