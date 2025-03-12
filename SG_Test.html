@@ -22,7 +22,11 @@
   <!-- responsive style -->
   <link href="responsive.css" rel="stylesheet" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://cdn.c360a.salesforce.com/beacon/c360a/6a48ddfd-3dcd-43ba-8d80-eb508e5aec5c/scripts/c360a.min.js"></script>
+  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/6a48ddfd-3dcd-43ba-8d80-eb508e5aec5c/scripts/c360a.min.js"></script>
+  <script>
+        SalesforceInteractions.init();
+        SalesforceInteractions.setLoggingLevel(4); 
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SP5W9XGLL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
