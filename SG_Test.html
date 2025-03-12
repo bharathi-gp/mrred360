@@ -25,7 +25,16 @@
   <script src="https://cdn.c360a.salesforce.com/beacon/c360a/6a48ddfd-3dcd-43ba-8d80-eb508e5aec5c/scripts/c360a.min.js"></script>
   <script>
         SalesforceInteractions.init();
-        SalesforceInteractions.setLoggingLevel(4); 
+        SalesforceInteractions.setLoggingLevel(4);
+        handleOptIn(){
+          SalesforceInteractions.updateConsents({ 
+            purpose: SalesforceInteractions.ConsentPurpose.Tracking, 
+            provider: "OneTrust", 
+            status: SalesforceInteractions.ConsentStatus.OptIn 
+          });
+          this.optInDisabled = true;
+          this.optOutDisabled = false;
+      }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SP5W9XGLL"></script>
   <script>
