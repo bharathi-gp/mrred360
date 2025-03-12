@@ -104,9 +104,9 @@
     function trackClickFunc(){
       SalesforceInteractions.sendEvent({
         interaction: {
-           name:'Test'
-        },
-        testAttribute1: 'SAVE10'
+          name:'Test',
+          testAttribute1: 'SAVE10'
+        }
       });
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
