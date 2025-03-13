@@ -130,6 +130,16 @@
         }
       }
       });
+      SalesforceInteractions.sendEvent({
+        interaction: {
+          name: 'myCustomEvent',
+          eventType: 'myCustomEvent',
+          myCustomField: 'some value'
+          attributes: {
+            myCustomNum: 1234,
+            myCustomText: "abcd"
+        }
+      });
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
