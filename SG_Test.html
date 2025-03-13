@@ -124,7 +124,17 @@
       });
       SalesforceInteractions.sendEvent({
       interaction: {
-        name: "Newtester"
+        name: "Newtester",
+        lineItem: {
+            catalogObjectType: "Product",
+            catalogObjectId: "product-1",
+            quantity: 1,
+            price: 9.99,
+            currency: "USD",
+            attributes: {
+                giftWrapping: 1
+            }
+        }
       }
       });
       analytics.track("Login Started",{
