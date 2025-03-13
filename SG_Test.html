@@ -140,6 +140,14 @@
             myCustomText: "abcd"
         }
     }});
+      SalesforceInteractions.sendEvent({
+        user: {
+          attributes: {
+            eventType: 'contactPointEmail',
+            email: 'user@domain.com'
+          }
+        }
+      });
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
