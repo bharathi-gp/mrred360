@@ -23,6 +23,7 @@
   <link href="responsive.css" rel="stylesheet" />
   <!-- Google tag (gtag.js) -->
   <script src="https://cdn.c360a.salesforce.com/beacon/c360a/4b84d099-2383-4b52-9c3c-6e97efc85fb7/scripts/c360a.min.js"></script>
+  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/f1e2712b-ccfd-4f68-891c-c9d25d6357ca/scripts/c360a.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SP5W9XGLL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -98,6 +99,17 @@
 <body class="sub_page">
   <script>
     function trackClickFunc(){
+      SalesforceInteractions.sendEvent({
+        interaction: {
+          name: "myCustomEvent",
+          eventType: "myCustomEvent",
+          myCustomField: "some value",
+          attributes: {
+            myCustomNum: 1234,
+            myCustomText: "abcd",
+          },
+        },
+      });
       analytics.track("Login Started",{
             destination_url: "https//www.intacct.com/ia/acct/login.phtml",
             element_class: "score-button button--secondary",
